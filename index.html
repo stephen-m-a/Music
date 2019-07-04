@@ -11,22 +11,138 @@
 </head>
 
 <body>
-
 <header>
   <div>
-  <ul class="navigation">
+  <ul class="topNav">
     <li><img src="musicNote.png" alt="Logo"></li>
     <li><a href="stream.html">Stream</a></li>
     <li><a href="stream.html">Explore</a></li>
+    <li><input type="text" placeholder="Search.."></li>
+    <div class="rightfloat">
+    <li><img id="rightNav" src="clock.png" alt="Clock"></li>
+    <li><img id="rightNav" src="message.png" alt="Message"></li>
+    <li><img id="rightNav" src ="globe.png" alt="Globe"></li>
+    <li class="roundedCorners"><img src="profile.png" alt="Profile"></li>
+    <li id="arrow"> &#9661;</li>
+    <!-- <li><img id="pointer" src="pointer.png" alt="Pointer"></li> -->
+    </div>
   </ul>
-  <input type="text" placeholder="Search..">
   </div>
-  </header>
+</header>
 
+<section>
+  <div class="main">
+      <div class="albumSection">
+        <img id="albumCover" src="bigPun.png" alt="Big-Pun">
+        <!-- <div>
+          <img id="albumCover" src="pauseGold.png" alt="Pause">
+        </div> -->
+        <div class="detailsSection">
+          <h3>Big Pun<p class="songDetails"> a year ago</p></h3>
+          <!-- <span class="songDetails"><h2>Capital Punishment</h2><button type="button" class="buttonPro">rap</button></span> -->
+        </div>
+      </div>
 
+      <div class="albumSection">
+        <div>
+          <img id="albumCover" src="jeremih.png" alt="jeremih">
+        </div>
+      </div>
 
+      <div class="albumSection">
+        <div>
+          <img id="albumCover" src="kendrickLamar.png" alt="k-dot">
+        </div>
+      </div>
 
+      <div class="albumSection">
+        <div>
+          <img id="albumCover" src="partynextdoor.png" alt="patynextdoor">
+        </div>
+      </div>
+  </div>
+
+<aside class="verticalNav">
+  <div class="containerNav">
+    <button type="button" class="buttonUpload"><img src="upload.png" alt=Logo>Upload</button>
+    <h2>STATISTICS</h2>
+  </div>
+  <div class="containerNav">
+    <span class="profileList"><h4>PLAYS TODAY 3</h4></span>
+    <span class="profileList"><h4>PLAYS YESTERDAY 6</h4></span>
+    <span class="profileList"><h4>PLAYS TOTAL 9</h4></span>
+    <h3>Know more</h3>
+    <p>Get more in-depth statistics about your audience.</p>
+    <button type="button" class="buttonPro">Go Pro</button>
+    <h2>FRIENDS SUGGESTIONS</h2>
+  </div>
+  <div class="containerNav">
+    <div class="friendsList">
+      <li>
+        <span class="profileList">
+          <h3>Jenny</h3>
+          <img id="imageFriends" src="headshotOne.png" alt="Headshot">
+          <div class="custombtn"><img   src="addFriend.png" alt=Logo></div>
+        </span>
+      </li>
+      <li>
+        <span class="profileList">
+          <h3>Dave</h3>
+          <img id="imageFriends" src="headshotTwo.png" alt="Headshot">
+          <div class="custombtn"><img   src="addFriend.png" alt=Logo></div>
+        </span>
+      </li>
+      <li>
+        <span class="profileList">
+          <h3>Steve</h3>
+          <img id="imageFriends" src="headshotThree.png" alt="Headshot">
+          <div class="custombtn"><img   src="addFriend.png" alt=Logo></div>
+        </span>
+      </li>
+      <li>
+        <span class="profileList">
+          <h3>Wiley</h3>
+          <img id="imageFriends" src="headshotFour.png" alt="Headshot">
+          <div class="custombtn"><img   src="addFriend.png" alt=Logo></div>
+        </span>
+      </li>
+    </div>
+  </div>
+</aside>
+</section>
+
+  <footer>
+    <div>
+      <ul class="bottomNav">
+        <!-- <li class="playbackIcon"> &#9194;</li> -->
+        <li><img class="imageIcon" src="previousTrack.png" alt="Previous Track"></li>
+        <li><img id="pauseIcon" src="pause.png" alt="Pause"></li>
+        <li><img class="imageIcon" src="nextTrack.png" alt="Next Track"></li>
+        <!-- <li class="playbackIcon"> &#9654;</li> -->
+        <!-- <li class="playbackIcon"> &#9193;</li> -->
+        <li id="bottomText"><p>2:52</p></li>
+        <li>
+          <div id="progressBar">
+            <div id="progressColor"></div>
+          </div>
+        </li>
+        <li id="bottomText"><p>4:57</p></li>
+        <li><img id="volumeIcon" src="volume.png" alt="Volume"></li>
+        <li>
+          <div id="volumeBar">
+            <div id="volumeColor"></div>
+          </div>
+        </li>
+        <li><img id="imageFriends" src="albumCover.png" alt="Volume"></li>
+        <li>
+          <div id="currentPlay">
+            <h3>Take Care</h3>
+            <h4>Drake</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
-
 </html>

@@ -1,33 +1,306 @@
-ul.navigation{
-  list-style-type: none;
+*{
+  box-sizing: border-box;
   margin: 0;
+}
+
+/* Header */
+
+ul.topNav{
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color:  #ff9900;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-ul.navigation li{
+ul.topNav li{
   float:left;
 }
 
-ul.navigation li a{
+ul.topNav li a{
   display:block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-ul.navigation  li a:hover{
-  background-color: #111;
+ul.topNav  li a:hover{
+  background-color: #ff0000;
 }
 
 .active{
   background-color: #4CAF50;
 }
 
-.navigation img{
+.topNav img{
   height: 40px;
-  background-repeat: 
+  background-repeat:
+}
+
+
+aside{
+  margin-bottom: 60px;
+}
+
+#rightNav{
+  height: 30px;
+  padding: 3px;
+  margin: 8px 10px;
+}
+
+/* #pointer{
+  weight: px;
+  padding: 3px;
+  margin: 8px 10px;
+} */
+
+.topNav input{
+  height: 30px;
+  margin: 8px 10px;
+  font-size: 150%;
+  border-width: 3px;
+  border-color: #000000;
+  background: #e6e6e6;
+}
+
+.topNav input placeholder{
+  color: #ff9900;
+}
+
+.rightfloat{
+  float:right;
+}
+
+.roundedCorners img{
+  border-radius: 30px;
+  height: 35px;
+  margin: 8px 10px;
+}
+
+#arrow{
+  margin: 1px 10px;
+  font-size: 30px;
+}
+
+.buttonUpload{
+  height:70px;
+  background:#e6e6e6;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#000000;
+  border-width: 3px;
+  border-color: #ff9900;
+  font-size: 20px;
+  width: 90%;
+  margin: 40px 20px 40px 20px;
+  border-radius: 15px;
+}
+
+.buttonUpload img{
+  padding-right: 10px;
+}
+
+.buttonPro{
+  height:35px;
+  background:#e6e6e6;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#000000;
+  border-width: 3px;
+  border-color: #ff9900;
+  font-size: 20px;
+  width: 40%;
+  margin: 40px 20px 40px 20px;
+  border-radius: 10px;
+}
+
+.main{
+  margin-top: 50px;
+  width: 75%;
+  float: left;
+  margin-bottom: 100px;
+}
+
+.albumSection{
+  margin: 30px;
+}
+
+.verticalNav{
+  width: 25%;
+  float: right;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+.verticalNav h2{
+  font-family: Georgia, Times, serif;
+  padding: 0px 20px 20px 20px;
+  color: #ff9900;
+}
+
+.containerNav{
+  border-width:  0px 3px 3px 3px;
+  border-style: solid;
+  border-color: #8c8c8c;
+}
+
+/* .containerNav span{
+  padding: 0px 180px;
+} */
+
+.verticalNav h3{
+  font-family: Verdana, sans-serif;
+  padding: 10px 10px 10px 20px;
+  color: #ff9900;
+}
+
+.verticalNav h4{
+  font-family: Verdana, sans-serif;
+  padding: 10px 10px 10px 20px;
+}
+
+.verticalNav p{
+  padding: 10px 10px 10px 20px;
+}
+
+.friendsList{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#imageFriends{
+  padding: 10px;
+  margin: 8px 10px;
+  border-width:3px;
+  border-color: #ff9900;
+  /* display: inline; */
+}
+
+.friendsList{
+  display:inline;
+}
+
+/* .friendsList button{
+  display: inline;
+} */
+
+.friendsList h3{
+  /* display: inline; */
+  color: #000000;
+}
+
+.profileList {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.songDetails{
+  display: inline;
+  padding-left: 500px;
+}
+
+.custombtn {
+  padding: 10px;
+  background-color: #e6e6e6;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 50px;
+  margin-top: 30px;
+}
+
+/* footer */
+ul.bottomNav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #e6e6e6;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ul.bottomNav li{
+  float:left;
+}
+
+ul.bottomNav li a{
+  display:block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.playbackIcon{
+  margin: 10px 5px;
+  font-size: 30px;
+}
+
+#progressBar{
+    width: 650px;
+    height: 5px;
+    background-color: #000000;
+    margin: 27px 20px 20px 20px;
+}
+
+#progressColor{
+  background-color: #ff9900;
+  width: 280px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imageIcon{
+  padding: 10px;
+  margin: 8px 10px;
+  border-width:3px;
+}
+
+#pauseIcon{
+  margin: 8px 1px 4px 1px;
+}
+
+ul.buttomNav li p{
+  font-size: 10px;
+  margin: 50px 10px;
+  padding: 20px;
+}
+
+#bottomText{
+  margin: 20px 5px 20px 5px;
+}
+
+#volumeIcon{
+  padding: 10px;
+  margin: 8px 1px 8px 10px;
+  border-width: 3px;
+}
+
+#volumeBar{
+    width: 70px;
+    height: 5px;
+    background-color: #000000;
+    margin: 27px 20px 20px 1px;
+}
+
+#volumeColor{
+  background-color: #ff9900;
+  width: 40px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#currentPlay{
+  margin: 20px 10px;
+}
+
+#currentPlay h3, h4{
+  color: #000000;
 }

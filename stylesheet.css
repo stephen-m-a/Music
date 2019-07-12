@@ -21,10 +21,10 @@ ul.topNav li{
 }
 
 ul.topNav li a{
-  display:block;
+  display: inline-block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 16px 0px 16px;
   text-decoration: none;
 }
 
@@ -46,10 +46,70 @@ aside{
   margin-bottom: 60px;
 }
 
+ul.profileNav{
+  list-style-type: none;
+  margin-left: 0;
+  float: right;
+}
+
+ul.profileNav li{
+  display: inline;
+}
+
+.profilePic{
+  height: 40px;
+}
+
+ul.buttonNav{
+  list-style-type: none;
+  margin-left: 0;
+  /* display: inline-block; */
+}
+
+ul.buttonNav li{
+  display: inline;
+  float: right;
+}
+
+ul.buttonNav  button{
+  width: 120%;
+}
+
+ul.pictureNav{
+  list-style-type: none;
+  margin-left: 0;
+  padding: 30px;
+}
+
+.buttonImg{
+  margin-right: 5px;
+}
+
+.buttonList{
+  height:25px;
+  background: #DCDCDC;
+  color:#000000;
+  border-width: 1px;
+  border-color: #ff9900;
+  font-size: 20px;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+}
+
+.buttonListStyle{
+  margin-right: 20px;
+}
+
+#albumCover{
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
 #rightNav{
   height: 30px;
   padding: 3px;
   margin: 8px 10px;
+  position: sticky;
 }
 
 /* #pointer{
@@ -120,23 +180,66 @@ aside{
 
 .main{
   margin-top: 50px;
-  width: 75%;
+  width: 50%;
   float: left;
   margin-bottom: 100px;
 }
 
 .albumSection{
   margin: 30px;
+  margin-left: 0;
+  margin-bottom: 100px;
 }
 
-.verticalNav{
+.flex-column{
+  flex-direction: column;
+}
+
+.detailsSection{
+  width: 100%;
+}
+
+.leftNav{
+  float: left;
+  width: 22%;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+
+.songDetails{
+  display: inline;
+  position: absolute;
+  /* padding-left: 250px; */
+  right: 30%;
+  /* flex-direction: */
+}
+
+.genre{
+  /* display: inline; */
+  height:35px;
+  background:#e6e6e6;
+  padding: 0 10px 0 10px;
+  color:#000000;
+  border-width: 1px;
+  border-color: #000000;
+  font-size: 20px;
+  width: 12%;
+  margin: 10px;
+  border-radius: 10px;
+  position: absolute;
+  right: 30%;
+}
+
+/* right NAV */
+
+.rightNav{
   width: 25%;
   float: right;
   background-color: #ffffff;
   margin-top: 50px;
 }
 
-.verticalNav h2{
+.rightNav h2{
   font-family: Georgia, Times, serif;
   padding: 0px 20px 20px 20px;
   color: #ff9900;
@@ -194,13 +297,39 @@ aside{
 }
 
 .profileList {
-  display: flex;
-  justify-content: flex-start;
+  /* display: flex;
+  justify-content: flex-start; */
+  margin-left: 10px;
+  display: inline;
+  position: absolute;
+  /* padding-left: 250px; */
+  right: 3%;
+  /* flex-direction: */
 }
 
-.songDetails{
-  display: inline;
-  padding-left: 500px;
+.addFriendList{
+  display: flex;
+  justify-content: space-around;
+}
+
+.profileList h3{
+  margin-top: 5px;
+
+}
+
+.containerNav h3 {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.containerNav p  {
+  margin-left: 10px;
+}
+
+.sectionList{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
 }
 
 .custombtn {
@@ -210,6 +339,39 @@ aside{
   cursor: pointer;
   height: 50px;
   margin-top: 30px;
+}
+
+#musicGIF{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+#signInLinks{
+  width: 70%;
+  background-color: #000000;
+  padding: 50px;
+  margin: auto;
+}
+
+#signInLists{
+  text-decoration: none;
+}
+
+#aboutImage{
+  /* background-color: #000000; */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.signInLIsts li{
+  display: inline-block;
+}
+
+ul.signInLIsts{
+  float: left;
 }
 
 /* footer */
@@ -239,6 +401,21 @@ ul.bottomNav li a{
 .playbackIcon{
   margin: 10px 5px;
   font-size: 30px;
+}
+
+.progressSection{
+  width: 650px;
+  height: 5px;
+  background-color: #000000;
+  margin: 35px 20px 20px 20px;
+}
+
+.endSection{
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  /* margin: 35px 20px 20px 20px 20px; */
+  margin-top: 50px;
 }
 
 #progressBar{
@@ -303,4 +480,15 @@ ul.buttomNav li p{
 
 #currentPlay h3, h4{
   color: #000000;
+}
+
+/* width 1100 */
+@media screen and (max-width: 1100px){
+  aside.rightNav {
+    display:none;
+  }
+
+  div.main{
+    width: 60%;
+  }
 }
